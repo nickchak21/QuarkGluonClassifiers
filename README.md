@@ -11,3 +11,5 @@ Another way to open the notebooks is to go .ipynb file on Github and click on "O
 
 You will also want to make sure you are running the notebook on a GPU. To do this, select "Runtime" at the top and click "Change Runtime Type". Change the hardware accelerator to "GPU". Make sure you complete this step BEFORE running any code, or you will have to start over with running the notebook.
 
+![image](https://user-images.githubusercontent.com/55861445/68805505-f3b34e00-0631-11ea-87b4-90f0546a8e0e.png)
+
