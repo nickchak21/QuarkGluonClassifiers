@@ -7,3 +7,4 @@ To run, you will want to use a GPU. I recommend CoLab. To open these notebooks, 
 
 Another way to open the notebooks is to go .ipynb file on Github and click on "Open with Colab" at the top of file.
 
+![image](https://user-images.githubusercontent.com/55861445/68804806-94a10980-0630-11ea-8c67-2a50204cca98.png)
