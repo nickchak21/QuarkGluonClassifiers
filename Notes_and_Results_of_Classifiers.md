@@ -23,7 +23,7 @@ The CNN algorithm works by creating images from the jet data.
 - Results were alright, optimized to around 0.859 with 20 epochs. In general, CNN is very inefficient
 - Default batch sizes seemed to be already optimized, changing them didn’t improve results
 
-<p>  <\p> 
+<p> \ <\p> 
 
 **EFN**
 
@@ -32,7 +32,7 @@ The CNN algorithm works by creating images from the jet data.
 - Used 500,000 jets to get AUC of over 0.875, didn’t try optimizing further
 - Didn’t mess much with batch sizes, assumed that they were automatically optimized
 
-<p>  <\p> 
+<p> \ <\p> 
 
 **PFN**
 
@@ -42,7 +42,7 @@ The CNN algorithm works by creating images from the jet data.
 - This seemed to have the potential to cross the 0.9 barrier for AUC, so I trained/validated/tested with 900,000 jets and 20 epochs. I got an AUC of 0.901684019627313! It does take forever though (12 minutes) to train.
 - Didn’t mess much with batch sizes, assumed that they were automatically optimized
 
-<p>  <\p> 
+<p> \ <\p> 
 
 **DNN**
 
