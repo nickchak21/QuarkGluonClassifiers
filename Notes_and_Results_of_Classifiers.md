@@ -50,4 +50,5 @@ The EFP classifier works by calculating the EFPs up to a specified dmax. Then, l
 - Computationally expensive to compute the EFPs, probably is not GPU optimized. Training process, on the other hand, is extremely quick
 - Extremely accurate using the defaults, with an AUC of 0.879 for d=5 (making it more accurate than the PFN using defaults)
 - Unclear how to optimize well, because it isn't structured like a traditional machine learning model
-- Tried dmax=10 and 40000 jets (instead of 20000 jets), 
+- Tried dmax=10 and 40000 jets (instead of 20000 jets), it takes forever to calculate EFPs (close to 15 minutes)
+- 
