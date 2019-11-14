@@ -39,5 +39,9 @@ The CNN algorithm works by creating images from the jet data.
 
 **DNN**
 
-
 **EFP**
+
+The EFP classifier works by calculating the EFPs up to a specified dmax (starting at 5). Then, linear classifiers (Fisher's Linear Discriminant by default) are trained on the EFPs, taking all EFPs up to degree d with d from 1 to dmax.
+
+- Computationally expensive to compute the EFPs, probably is not GPU optimized
+
