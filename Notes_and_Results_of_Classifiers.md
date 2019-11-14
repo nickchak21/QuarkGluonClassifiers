@@ -1,6 +1,6 @@
 **Summary** 
 
-In this article, I compare several types of quark and gluon classifiers using a metric called AUC, the area under a ROC curve for a classifier.
+In this document, I compare several types of quark and gluon classifiers using a metric called AUC, the area under a ROC curve for a classifier.
 
 **EMD Tagger**
 
