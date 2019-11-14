@@ -11,7 +11,7 @@ Setting n from 10 - 200, we achieve the following AUC score graph:
 ![image](https://user-images.githubusercontent.com/55861445/68832614-6eef2100-067f-11ea-8656-97ee88efc035.png)
 
 The highest AUC is achieved when n = 40, at a value of 0.84855.
-
+&nbsp;
 
 **CNN**
 
@@ -20,7 +20,7 @@ The CNN algorithm works by creating images from the jet data.
 - Took up a lot of RAM because it was creating the images, was only able to use 220,000 jets in total or RAM would run out
 - Results were alright, optimized to around 0.859 with 20 epochs. In general, CNN is very inefficient
 - Default batch sizes seemed to be already optimized, changing them didn’t improve results
-
+&nbsp;
 
 **EFN**
 
@@ -28,7 +28,7 @@ The CNN algorithm works by creating images from the jet data.
 - Used 35 epochs (which we could do, since it was computationally inexpensive) raised the AUC to over 0.87
 - Used 500,000 jets to get AUC of over 0.875, didn’t try optimizing further
 - Didn’t mess much with batch sizes, assumed that they were automatically optimized
-
+&nbsp;
 
 **PFN**
 
@@ -37,7 +37,7 @@ The CNN algorithm works by creating images from the jet data.
 - 20 epochs seemed to be good enough to train the PFN to convergence
 - This seemed to have the potential to cross the 0.9 barrier for AUC, so I trained/validated/tested with 900,000 jets and 20 epochs. I got an AUC of 0.901684019627313! It does take forever though (12 minutes) to train.
 - Didn’t mess much with batch sizes, assumed that they were automatically optimized
-
+&nbsp;
 
 **DNN**
 
