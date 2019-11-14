@@ -31,7 +31,7 @@ The CNN algorithm works by creating images from the jet data.
 
 **PFN**
 
-- This classifier was by far the best in terms of accuracy/AUC, started at over 0.87 even with 100,000 jets and just 5 epochs
+- This classifier very good in terms of accuracy/AUC, started at over 0.87 even with 100,000 jets and just 5 epochs
 - Slightly less efficient than the EFN, but much better than the CNN
 - 20 epochs seemed to be good enough to train the PFN to convergence
 - This seemed to have the potential to cross the 0.9 barrier for AUC, so I trained/validated/tested with 900,000 jets and 20 epochs. I got an AUC of 0.901684019627313! It does take forever though (12 minutes) to train.
@@ -41,7 +41,9 @@ The CNN algorithm works by creating images from the jet data.
 
 **EFP**
 
-The EFP classifier works by calculating the EFPs up to a specified dmax (starting at 5). Then, linear classifiers (Fisher's Linear Discriminant by default) are trained on the EFPs, taking all EFPs up to degree d with d from 1 to dmax.
+The EFP classifier works by calculating the EFPs up to a specified dmax. Then, linear classifiers (Fisher's Linear Discriminant by default) are trained on the EFPs, taking all EFPs up to degree d with d from 1 to dmax. Therefore, using the default dmax=5, we get 5 AUC values, 1 for each d value.
 
-- Computationally expensive to compute the EFPs, probably is not GPU optimized
+- Computationally expensive to compute the EFPs, probably is not GPU optimized. Training process, on the other hand, is extremely quick
+- Extremely accurate using the defaults, with an AUC of 0.879 for d=5 (making it more accurate than the PFN using defaults)
+- Unclear how to optimize well, because it isn't structured like a traditional machine learning model
 
